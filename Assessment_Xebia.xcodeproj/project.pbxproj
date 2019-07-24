@@ -23,6 +23,7 @@
 		D4634C0D22E626C70012C780 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4634C0922E626C70012C780 /* APIConstants.swift */; };
 		D4634C0E22E626C70012C780 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4634C0A22E626C70012C780 /* Utilities.swift */; };
 		D4634C1122E630C50012C780 /* NewsModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4634C1022E630C50012C780 /* NewsModelClass.swift */; };
+		D4634C1322E7418D0012C780 /* APIManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4634C1222E7418C0012C780 /* APIManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		D4634C0922E626C70012C780 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		D4634C0A22E626C70012C780 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D4634C1022E630C50012C780 /* NewsModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModelClass.swift; sourceTree = "<group>"; };
+		D4634C1222E7418C0012C780 /* APIManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTest.swift; sourceTree = "<group>"; };
 		E92CFC31D2773BE1AA52B507 /* Pods-Assessment_XebiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assessment_XebiaTests.debug.xcconfig"; path = "Target Support Files/Pods-Assessment_XebiaTests/Pods-Assessment_XebiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 			children = (
 				D4634BE922E5E79A0012C780 /* Assessment_XebiaTests.swift */,
 				D4634BEB22E5E79A0012C780 /* Info.plist */,
+				D4634C1222E7418C0012C780 /* APIManagerTest.swift */,
 			);
 			path = Assessment_XebiaTests;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4634C1322E7418D0012C780 /* APIManagerTest.swift in Sources */,
 				D4634BEA22E5E79A0012C780 /* Assessment_XebiaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

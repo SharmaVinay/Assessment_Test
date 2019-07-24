@@ -11,26 +11,26 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var newsListArray = NSMutableArray()
-   
     @IBOutlet weak var newsListTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        newsListTableView.accessibilityIdentifier = "myUniqueTableViewIdentifier"
+
         self.callNewsListAPI ()
         
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return newsListArray.count
+        return newsListArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let element = self.newsListArray.object(at: indexPath.row) as! NewsModelClass
         // Instantiate a cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell",for: indexPath) as! TableViewCell
+        cell.accessibilityIdentifier = "myCTableViewCell_\(indexPath.row)"
         cell.setCellContent(dict: element)
         return cell
         

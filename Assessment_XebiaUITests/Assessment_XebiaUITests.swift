@@ -25,6 +25,17 @@ class Assessment_XebiaUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testInitialStateIsCorrect() {
+        //let table = XCUIApplication().tables
+        //XCTAssertEqual(table.cells.count, 1, "There should be 7 rows initially")
+        
+        let app = XCUIApplication()
+        let myTable = app.tables.matching(identifier: "myUniqueTableViewIdentifier")
+        let cell = myTable.cells.element(matching: .cell, identifier: "TableViewCell_0")
+        cell.tap()
+        
+    }
 
     func testExample() {
         // Use recording to get started writing UI tests.
