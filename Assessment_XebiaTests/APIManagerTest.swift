@@ -19,10 +19,22 @@ class APIManagerTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testgetNewsList() {
+    //func testgetNewsList() {
         
-        //_ = "https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=" + "ysqg40RVt2Tc6t9EF60P2v4tKUTzWwtC"
-        //alamofireManager.request(UrlString)
+        func testAPIWorking() {
+            
+            let expectation = XCTestExpectation.init(description: "Your expectation")
+            let params : APIParams = [:]
+            APIManager.sharedInstance.getNewsList(params, onSuccessClosure: { (response) in
+                if response.isEmpty
+                {
+                    XCTFail("Fail")
+                }
+                // The request is finished, so our expectation
+                expectation.fulfill()
+            },onFailureClosure: { (errorResponse) in
+                XCTFail("Fail")
+            })
     }
     
     func testExample() {
@@ -37,10 +49,4 @@ class APIManagerTest: XCTestCase {
         }
 }
     
-//    func getNewsList(_ params :APIParams,onSuccessClosure onSuccess :@escaping (_ response:JSONObject) ->(),onFailureClosure onFailure:  @escaping (_ error: String) -> ())
-//    {
-//
-//    }
-    
-   
 }
