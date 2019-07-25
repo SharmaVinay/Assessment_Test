@@ -36,6 +36,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let element = self.newsListArray.object(at: indexPath.row) as! NewsModelClass
+        let link = element.url
+        print("link", link)
+        let detailVC = self.storyboard!.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        detailVC.webLink = link
+        self.navigationController!.pushViewController(detailVC, animated: true)
+    }
+    
+    
+    
     //MARK: - API Call
     /// Method for calling the Employer List API
     func callNewsListAPI()

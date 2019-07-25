@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		124281731BF307682F5497AD /* Pods_Assessment_Xebia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E5A37371EA75C1450F1BAF /* Pods_Assessment_Xebia.framework */; };
 		4F0F685B495E3429F06E10FC /* Pods_Assessment_XebiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A7E1ABF7EDD20D07FFB083 /* Pods_Assessment_XebiaTests.framework */; };
+		85DA7E0822E9872C009FDE0F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA7E0722E9872C009FDE0F /* DetailViewController.swift */; };
+		85DA7E1022E99AF7009FDE0F /* DetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA7E0F22E99AF7009FDE0F /* DetailViewControllerTest.swift */; };
 		BC37E797198826FA95BCDDAA /* Pods_Assessment_XebiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02682F2B9A8E7EE0B5F69D1 /* Pods_Assessment_XebiaUITests.framework */; };
 		D4634BD522E5E77B0012C780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4634BD422E5E77B0012C780 /* AppDelegate.swift */; };
 		D4634BD722E5E77B0012C780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4634BD622E5E77B0012C780 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		5D996BF7A6AC552B44320B2D /* Pods-Assessment_XebiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assessment_XebiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Assessment_XebiaUITests/Pods-Assessment_XebiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		61A7E1ABF7EDD20D07FFB083 /* Pods_Assessment_XebiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assessment_XebiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85DA7E0722E9872C009FDE0F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		85DA7E0F22E99AF7009FDE0F /* DetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTest.swift; sourceTree = "<group>"; };
 		89D297365EB3AA7A642DF5B7 /* Pods-Assessment_XebiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assessment_XebiaTests.release.xcconfig"; path = "Target Support Files/Pods-Assessment_XebiaTests/Pods-Assessment_XebiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F2A3EE150D6E0C2EB457FBF /* Pods-Assessment_Xebia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assessment_Xebia.debug.xcconfig"; path = "Target Support Files/Pods-Assessment_Xebia/Pods-Assessment_Xebia.debug.xcconfig"; sourceTree = "<group>"; };
 		A02682F2B9A8E7EE0B5F69D1 /* Pods_Assessment_XebiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assessment_XebiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,7 @@
 			children = (
 				D4634BD422E5E77B0012C780 /* AppDelegate.swift */,
 				D4634BD622E5E77B0012C780 /* ViewController.swift */,
+				85DA7E0722E9872C009FDE0F /* DetailViewController.swift */,
 				D4634BD822E5E77B0012C780 /* Main.storyboard */,
 				D4634BDB22E5E79A0012C780 /* Assets.xcassets */,
 				D4634BDD22E5E79A0012C780 /* LaunchScreen.storyboard */,
@@ -170,6 +175,7 @@
 				D4634BE922E5E79A0012C780 /* Assessment_XebiaTests.swift */,
 				D4634BEB22E5E79A0012C780 /* Info.plist */,
 				D4634C1222E7418C0012C780 /* APIManagerTest.swift */,
+				85DA7E0F22E99AF7009FDE0F /* DetailViewControllerTest.swift */,
 			);
 			path = Assessment_XebiaTests;
 			sourceTree = "<group>";
@@ -431,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DA7E0822E9872C009FDE0F /* DetailViewController.swift in Sources */,
 				D4634C0C22E626C70012C780 /* Constants.swift in Sources */,
 				D4634C0B22E626C70012C780 /* APIManager.swift in Sources */,
 				D4634C0E22E626C70012C780 /* Utilities.swift in Sources */,
@@ -448,6 +455,7 @@
 			files = (
 				D4634C1322E7418D0012C780 /* APIManagerTest.swift in Sources */,
 				D4634BEA22E5E79A0012C780 /* Assessment_XebiaTests.swift in Sources */,
+				85DA7E1022E99AF7009FDE0F /* DetailViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

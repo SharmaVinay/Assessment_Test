@@ -20,10 +20,9 @@
         var abstract: String!
         var published_date: String!
         var source: String!
-        //var id: String!
-        //var asset_id: String!
+        var id: Int!
+        var asset_id: Int!
         var uri: String!
-        
         
         init?(dictionary: NSDictionary)
         {
@@ -36,8 +35,8 @@
             self.abstract = (dictionary[APIConstants.AbstractKey] as! String)
             self.published_date = (dictionary[APIConstants.Published_dateKey] as! String)
             self.source = (dictionary[APIConstants.SourceKey] as! String)
-            //self.id = (dictionary[APIConstants.IDKey] as! String)
-            //self.asset_id = (dictionary[APIConstants.AssetIDKey] as! String)
+            self.id = (dictionary[APIConstants.IDKey] as! Int)
+            self.asset_id = (dictionary[APIConstants.AssetIDKey] as! Int)
             self.uri = (dictionary[APIConstants.UriKey] as! String)
         }
     }

@@ -27,10 +27,8 @@ open class APIManager {
 
     //Shared Manager
     let alamofireManager: Alamofire.SessionManager = {
-        let serverTrustPolicies: [String: ServerTrustPolicy] = [
+        let serverTrustPolicies: [String: ServerTrustPolicy] = [:]
             //SKAPIConstants.SSLByPassURL: .disableEvaluation
-        :]
-        
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
         configuration.timeoutIntervalForRequest = 60
@@ -58,6 +56,7 @@ open class APIManager {
                 print("Result: \(response.result)")   // result of response serialization
                 if response.result.isSuccess {
                     let jsonDict = response.result.value as! JSONDictionary
+                    print("jsonDict:",jsonDict)
                     onSuccess(jsonDict)
                 } else {
                         onFailure(NSLocalizedString("Something went wrong, please try again.", comment: "Something went wrong, please try again."))
